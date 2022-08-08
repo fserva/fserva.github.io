@@ -30,7 +30,7 @@ First generate a cookie file for zenodo and your token with:
 `curl -c zenodo-cookies.txt "https://zenodo.org/record/{record number}?token={your token}"`.
 
 Then proceed to download your file(s) of interest with:
-`curl --cookie zenodo-cookies.txt "https://zenodo.org/record/{record number}/files/{target file name}.zip" --output {target file name}.zip`.
+`curl --cookie zenodo-cookies.txt "https://zenodo.org/record/{record number}/files/{target file name}.zip?download=1" --output {target file name}.zip`.
 
 Just change every field in curly braces with the relevant string for your case.
 
